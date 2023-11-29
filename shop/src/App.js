@@ -3,7 +3,10 @@ import Catalog from './Catalog';
 import Footer from './Footer';
 import Header from './Header';
 import Home from './Home';
+import ProductDetail from './ProductDetail';
 import TestSlider from './swiper';
+import ProductCard from './ProductCard';
+import productsList from './CatalogData';
 import './App.css'
 function App() {
   return (
@@ -15,9 +18,9 @@ function App() {
         <Routes>
             <Route path='/' exact element={<Home />} />
             <Route path='/catalog' element={<Catalog />} />
-
+            <Route path='/product/:id'  element={<ProductDetail/>} />
         </Routes>
-        <TestSlider/>
+
         </div>
        </main>
       <Footer/>
